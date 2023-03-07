@@ -1,1 +1,16 @@
+...............Without using function...............
 
+#include <stdio.h>
+
+int main ()
+{
+    int x, y;
+    x = 10;
+    y = 20;
+    printf ("before swaping x = %d, y = %d\n", x, y);
+    int a, b;
+    a = x;
+    b = y;
+    printf ("After Swaping a = %d, b = %d\n", a, b);
+    return 0;
+}
