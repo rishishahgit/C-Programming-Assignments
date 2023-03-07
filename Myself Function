@@ -1,1 +1,89 @@
+................FIRST VERSION.................
 
+#include <stdio.h>
+
+//Function Declaration//
+
+void get_input (char Name[], int age[], char colour[], char Life_Goal);
+void print_output (char Name[], int age[], char colour[], char Life_Goal);
+
+// Main Function //
+
+int main ()
+{
+    char name [12];
+    int age [100];
+    char colour [12];
+    char Life_Goal;
+    get_input(name, age, colour, Life_Goal);
+    print_output(name, age, colour, Life_Goal);
+    return 0;
+}
+
+// Function Defination //
+void get_input (char name[], int age[], char colour[], char Life_goal); 
+{
+    printf ("Enter your name:");
+    scanf ("%c", name);
+    printf ("Enter your age");
+    scanf ("%d", age);
+    prinntf ("Enter your favourite colour name");
+    scanf ("%c", colour);
+    printf ("Enter your Life_Goal");
+    scanf ("%c", Life_Goal);
+}
+
+void print_output (char name[], int age[], char colour[], char Life_goal); 
+{
+    printf ("My name is %c.\n", name);
+    printf ("I am %d years old.\n", age);
+    printf ("My favourite colour is %c.\n", colour);
+    printf ("My life goal is %c.\n", Life_Goal);
+}
+
+
+................SECOND VERSION.................
+
+#include <stdio.h>
+
+//Function Declaration//
+
+void get_input (char Name[], int age, char colour[], char Life_Goal[]);
+void print_output (char Name[], int age, char colour[], char Life_Goal[]);
+
+// Main Function //
+
+int main ()
+{
+    char name[12];
+    int age;
+    char colour[12];
+    char Life_Goal[50];
+    get_input(name, age, colour, Life_Goal);
+    print_output(name, age, colour, Life_Goal);
+    return 0;
+}
+
+// Function Defination //
+void get_input (char name[], int age, char colour[], char Life_goal[]) 
+{
+    printf("Enter your name:");
+    scanf("%s", name);
+    
+    printf("Enter your age:");
+    scanf("%d", &age);
+    
+    printf("Enter your favourite colour name:");
+    scanf("%s", colour);
+    
+    printf("Enter your Life_Goal:");
+    scanf("%s", Life_goal);
+}
+
+void print_output (char name[], int age, char colour[], char Life_goal[]) 
+{
+    printf("My name is %s.\n", name);
+    printf("I am %d years old.\n", age);
+    printf("My favourite colour is %s.\n", colour);
+    printf("My life goal is %s.\n", Life_goal);
+}
