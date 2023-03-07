@@ -1,1 +1,11 @@
+.............WITHOUT USING FUNCTION..................
 
+#include <stdio.h>
+int main ()
+{
+    int square, number;
+    printf ("Enter Number to find square:");
+    scanf ("%d", &number);
+    square = number * number;
+    printf ("The answer of the %d is %d", &number, square ); 
+}
